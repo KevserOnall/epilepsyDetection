@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "eegai"
+location: "asia-east1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "eegai-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
